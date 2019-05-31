@@ -1,0 +1,11 @@
+celsius = float(input("Please enter temperature in Celsius: "))
+fahrenheit = float(input("Please enter temperature in Fahrenheit: "))
+
+print("{0:16}{1:31}{2:14}{3:00}".format("F", "FtoC", "C", "CtoF"))
+print("{0:15}{1:30}{2:15}{3:00}".format("-----", "------", "-----", "------"))
+for x in range(0,16):
+    celsius += 1
+    ctof = float(round((celsius*9/5) + 32, 2))
+    fahrenheit += 1
+    ftoc = float(round((fahrenheit-32) * 5/9, 2))
+    print("{0:15}{1:30}{2:15}{3:22}".format(fahrenheit,round(ftoc,2), celsius,round(ctof,2)))

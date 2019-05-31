@@ -1,0 +1,8 @@
+class color:
+    BOLD = '\033[1m'
+
+rows = 10
+print("{0:15}{1:30}".format(color.BOLD + "Pattern A" + "Pattern B" + color.END))
+print("---------------------------")
+for i in range (rows):
+    print("{0:15}{1:30}".format("*"*(i+1), "*"*(rows-i)))
